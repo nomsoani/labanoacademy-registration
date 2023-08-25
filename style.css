@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/*========== BASE ==========*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  /*        navbar        */
+  
+
+  .SECTION-ONE, .SECTION-three, .SECTION-four {
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+
+  @media (min-width: 1px) and (max-width: 850px) {
+    .SECTION-ONE, .SECTION-two, .SECTION-three, .SECTION-four {
+        padding-left: 10px;
+        padding-right: 10px;
+
+      }
+  }
+
+ 
+
+  .navbar li {
+    margin-left : 1.8em;
+    margin-right : 1.8em;
+   
+  }
+
+  .navbar li a {
+    font-size: 14px;
+    font-weight: 500;
+    color:  #154281;
+    font-family: 'poppins';
+  }
+
+  @media (min-width: 1px) and (max-width: 991px)  {
+    .nav-link {
+        margin-top: 30px;
+    }
+    
+    #navbarScroll .navbar-nav{
+        height: 400px;
+    }
+}
+
+.d-flex .btn {
+    border: none;
+    background-image: linear-gradient(to right bottom, #014AAD, #014AAD);
+}
+
+.btn a {
+    color: white;
+}
+
+    
+
+.navbar {
+    margin-bottom:  -30px;
+    margin-top: -10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0 2px 2px rgba(248, 248, 248, 0.4);
+}
+
+.navbar-brand {
+    height: 100px;
+    width: 100px;
+    
+}
+
+
+.navbar-brand-div {
+  height: 100px;
+  width: 100px;
+  
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+/* media query */
+
+
+@media (min-width:1px) and (max-width: 768px) {
+    button {
+        display: none;
+    }
+
+    .container-fluid a {
+        margin: auto;
+    }
+}
+
+/*             tech div               */
+
+
+.pt-5 {
+    margin-top: 3rem;
+    color: #014AAD;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+
+/*               form           */
+
+
+
+.contact {
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-bottom: -50px;
+    min-height: 120vh;
+   }
+
+
+   input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+
+   .background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+    height: auto;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 10px;
+    margin-bottom: 6rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #fff;
+  }
+  
+  .screen-header-button.maximize {
+    background: blue;
+  }
+  
+  .screen-header-button.minimize {
+    background: whitesmoke;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: whitesmoke;
+    font-size: 25px;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 14px;
+    color: whitesmoke;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #b3b2b2;
+    color: #f0eeee;
+    font-size: 14px;
+    outline: none;
+    transition: ease-in .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #838181;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    padding: 6px 6px 6px 6px;
+    border-radius: 4px;
+    background: black;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    animation: zoom-in-zoom-out 5s ease-out infinite; 
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .app-form-button:hover {
+    color: rgb(52, 18, 204);
+  }
+
+
+
+  /*  radio  */
+
+  .rd {
+    color: #f0eeee;
+  }
+
+  .radio-div label {
+    margin-right: 2em;
+    margin-top: 1rem;
+  }
+
+  .radio-div {
+    margin-top: 2rem;
+  }
+
+  /*  select  */
+
+  
+
+  .select {
+    border: 1px solid #838181;
+    border-radius: none;
+    margin-top: 2rem;
+  }
+  
+  option {
+    background-color: #3e3e3e;
+    color: #f0eeee;
+  }
+
+  /*  media query */
+
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .app-form-button {
+        display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .screen {
+        margin-bottom: 5px;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .screen {
+        margin-bottom: 10px;
+    }
+
+    .pt-5 {
+        font-size: 19px;
+    }
+  }
+
+  @media screen and (max-width: 338px) {
+    .app-title {
+        font-size: 19px;
+    }
+  }
+
+  /*       footer       */
+
+  footer {
+    border-top: 1px solid #807c7c;
+    color: #033f92;
+    font-family: cursive;
+  }
+
